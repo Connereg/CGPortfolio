@@ -15,14 +15,42 @@
   color: #616161;
 }
 
-.App-link {
-  color: #61dafb;
+
+#canvas-div {
+  background-color: #616161;
 }
 
-#canvas {
+#bio-div {
   width: 100%;
-  background-color: #616161;
-  padding-top: 42px;
+  background-color: lightblue;
+  padding-bottom: 50px;
+}
+
+.navbar-spacing {
+  margin-top: 42px;
+}
+
+.full-height {
+  height: calc(100vh - 42px);
+}
+
+#connerpic {
+  
+}
+
+#conner-bio-card {
+  margin: auto;
+  width: 50%;
+}
+
+#conner-interests-card {
+  margin: auto;
+  width: 50%;
+}
+
+#conner-my-skills-card {
+  margin: auto;
+  width: 50%;
 }
 
 .animated-header {
@@ -37,11 +65,13 @@
   text-align: center;
   margin: auto;
   color: #FFFFFF;
-  height: calc(100vh - 42px);
 }
+
+
 
 .sticky {
   position: fixed;
   top: 0;
   width: 100%;
+  z-index: 1;
 }

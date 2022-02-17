@@ -15,7 +15,7 @@ function App() {
       <NavBar setAppFocus={setAppFocus}/>
       <Canvas />
       {appFocus === "home" ?  
-        <Body /> : <Outlet />}
+        <Body setAppFocus={setAppFocus} /> : <Outlet />}
     </div>
   );
 }

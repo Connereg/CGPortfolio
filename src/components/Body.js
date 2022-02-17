@@ -5,12 +5,13 @@ import Contact from './Contact';
 
 
 
-function Body() {
+function Body(props) {
+    const { setAppFocus } = props;
+
 
     return (
         <div>
-            <h2>BODY SECTION</h2>
-            <Bio />
+            <Bio setAppFocus={setAppFocus} />
             <Portfolio />
             <Contact />
         </div>

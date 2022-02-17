@@ -27,19 +27,11 @@ function Canvas() {
      })
 
     return(
-        <div id="canvas-div" className="home-canvas-div">
-            <div id="canvas" 
-            // style={{ 
-            //     width: "100%",
-            //     height: "2000px",
-            //     backgroundColor: "#616161",
-            //  }}
-            >
-                <animated.div className="animated-header" style={nameprops}>
-                    <h1>Conner Gleason</h1>
-                    <animated.h2 style={detailprops}> Web Developer and Quality Assurance Engineer</animated.h2>
-                </animated.div>     
-            </div>
+        <div id="canvas-div" className="home-canvas-div full-height navbar-spacing">
+            <animated.div className="animated-header" style={nameprops}>
+                <h1>Conner Gleason</h1>
+                <animated.h2 style={detailprops}> Web Developer and Quality Assurance Engineer</animated.h2>
+            </animated.div> 
         </div>
     )
 }
