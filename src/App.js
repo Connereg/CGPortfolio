@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Body from './components/Body';
 import NavBar from './components/NavBar';
 import Canvas from './components/Canvas';
-import { Outlet, Link } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 
 
 
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-      <NavBar appFocus={appFocus} setAppFocus={setAppFocus}/>
+      <NavBar setAppFocus={setAppFocus}/>
       <Canvas />
       {appFocus === "home" ?  
         <Body /> : <Outlet />}

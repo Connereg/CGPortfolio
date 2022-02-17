@@ -22,7 +22,7 @@ function Canvas() {
         reset: false,
         // reverse: flip,
         delay: 500,
-        config: { mass:1, tension: 280, friction: 600},
+        config: { mass:1, tension: 280, friction: 400},
         onRest: () => set(!flip),
      })
 

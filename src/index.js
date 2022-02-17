@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Body from './components/Body';
 import Bio from './components/Bio';
 import Contact from './components/Contact';
 import Portfolio from './components/Portfolio';

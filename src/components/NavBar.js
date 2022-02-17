@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar(props) {
 
-   const { appFocus, setAppFocus } = props;
+   const { setAppFocus } = props;
 
    document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', sticknav);
