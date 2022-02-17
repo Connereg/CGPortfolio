@@ -2,13 +2,27 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Body from './components/Body';
+import Bio from './components/Bio';
+import Contact from './components/Contact';
+import Portfolio from './components/Portfolio';
 import reportWebVitals from './reportWebVitals';
 
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import 'semantic-ui-css/semantic.min.css';
+
+const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+  <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<App />} >
+        <Route path="bio" element={<Bio />} />
+        <Route path="portfolio" element={<Portfolio />} />
+        <Route path="contactme" element={<Contact />} />
+      </Route>
+    </Routes>
+  </BrowserRouter>,
+  rootElement
 );
 
 // If you want to start measuring performance in your app, pass a function
