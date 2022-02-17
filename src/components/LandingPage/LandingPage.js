@@ -3,7 +3,7 @@ import { useSpring, animated } from 'react-spring';
 
 
 
-function Canvas() {
+function LandingPage() {
     const [flip, set] = useState(false)
 
     const nameprops = useSpring({ 
@@ -27,7 +27,7 @@ function Canvas() {
      })
 
     return(
-        <div id="canvas-div" className="home-canvas-div full-height navbar-spacing">
+        <div id="landing-page-div" className="landing-page-div full-height navbar-spacing">
             <animated.div className="animated-header" style={nameprops}>
                 <h1>Conner Gleason</h1>
                 <animated.h2 style={detailprops}> Web Developer and Quality Assurance Engineer</animated.h2>
@@ -36,4 +36,4 @@ function Canvas() {
     )
 }
 
-export default Canvas;
+export default LandingPage;

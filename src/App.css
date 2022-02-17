@@ -16,7 +16,7 @@
 }
 
 
-#canvas-div {
+#landing-page-div {
   background-color: #616161;
 }
 
@@ -40,17 +40,17 @@
 
 #conner-bio-card {
   margin: auto;
-  width: 50%;
+  width: 75%;
 }
 
 #conner-interests-card {
   margin: auto;
-  width: 50%;
+  width: 75%;
 }
 
 #conner-my-skills-card {
   margin: auto;
-  width: 50%;
+  width: 75%;
 }
 
 .animated-header {

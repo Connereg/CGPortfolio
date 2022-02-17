@@ -1,0 +1,4 @@
+export const descriptionCopy =
+    'I am a dedicated and enthusiastic web developer from the New York Metropolitan area. Possessing full-stack web development capabilities and automated testing, I am constantly pushing myself to grow my skills and create amazing applications!'
+export const interestsCopy = 'My interests outside of web development are skateboarding, studying film and television history, DJing and running an electronic music label, and competitive fighting games. '
+export const skillsCopy = ' React ∙ Javascript ∙ Ruby/Rails ∙ GIT ∙ PostgreSql ∙ HTML ∙ CSS ∙ Nightwatch.js ∙ Python ∙ Node.Js '

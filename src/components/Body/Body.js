@@ -1,7 +1,7 @@
 import React from "react";
-import Bio from './Bio';
-import Portfolio from './Portfolio';
-import Contact from './Contact';
+import Bio from '../Bio/Bio';
+import Portfolio from '../Portfolio/Portfolio';
+import Contact from '../Contact/Contact';
 
 
 

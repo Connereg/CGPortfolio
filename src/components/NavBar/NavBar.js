@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Menu } from 'semantic-ui-react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 
 function NavBar(props) {
@@ -25,28 +25,56 @@ function NavBar(props) {
     return (
         <div id="navbar-div"className="navbar-div">
             <Menu className="navbar-menu">
-                <Link to={"/"}>
+                <Link
+                    activeClass="active"
+                    to="landing-page-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                >
                     <Menu.Item
                         name='home'
                         content='Home'
                         onClick={(e) => setAppFocus("home")}>
                     </Menu.Item>
                 </Link>
-                <Link to={"/bio"}>
+                <Link
+                    activeClass="active"
+                    to="bio-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                >
                     <Menu.Item 
                         name='bio'
                         content='Bio'
                         onClick={(e) => setAppFocus("bio")}>
                     </Menu.Item>
                 </Link>
-                <Link to={"/portfolio"}>
+                <Link
+                    activeClass="active"
+                    to="portfolio-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                >
                     <Menu.Item 
                         name='portfolio'
                         content='Portfolio'
                         onClick={(e) => setAppFocus("portfolio")}>
                     </Menu.Item>
                 </Link>
-                <Link to={"/contactme"}>
+                <Link
+                    activeClass="active"
+                    to="contact-me-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                >
                     <Menu.Item
                         name='contactme'
                         content='Contact Me'

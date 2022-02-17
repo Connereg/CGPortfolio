@@ -1,8 +1,8 @@
 import './App.css';
 import { useState } from 'react';
-import Body from './components/Body';
-import NavBar from './components/NavBar';
-import Canvas from './components/Canvas';
+import Body from './components/Body/Body';
+import NavBar from './components/NavBar/NavBar';
+import LandingPage from './components/LandingPage/LandingPage';
 import { Outlet } from "react-router-dom";
 
 
@@ -13,9 +13,8 @@ function App() {
   return (
     <div className="App">
       <NavBar setAppFocus={setAppFocus}/>
-      <Canvas />
-      {appFocus === "home" ?  
-        <Body setAppFocus={setAppFocus} /> : <Outlet />}
+      <LandingPage setAppFocus={setAppFocus}/>  
+        <Body setAppFocus={setAppFocus} />
     </div>
   );
 }
