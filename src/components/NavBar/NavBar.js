@@ -69,6 +69,20 @@ function NavBar(props) {
                 </Link>
                 <Link
                     activeClass="active"
+                    to="blog-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                >
+                    <Menu.Item
+                        name='blog'
+                        content='Blog'
+                        onClick={(e) => setAppFocus("blog")}>
+                    </Menu.Item>
+                </Link>
+                <Link
+                    activeClass="active"
                     to="contact-me-div"
                     spy={true}
                     smooth={true}
