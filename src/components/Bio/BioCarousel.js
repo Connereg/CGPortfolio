@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import { Card, Button } from 'semantic-ui-react';
-import { Link } from 'react-scroll';
 import { descriptionCopy, interestsCopy, skillsCopy } from './bioCopy';
 import LinkToContact from './LinkToContact'
 import './Bio.scss';
