@@ -10,9 +10,6 @@ function Bio(props) {
 
     const { setAppFocus } = props;
 
-    // const descriptionLink = (<Link to="contactme" onClick={() => setAppFocus("contactme")}>Let's do great work together!</Link>);
-    // const interestsLink = (<Link to="contactme" onClick={() =>setAppFocus("contactme")}>Feel free to ask any questions!</Link>);
-    // const skillsLink = (<Link to="contactme" onClick={() => setAppFocus("contactme")}> Contact me to learn more! </Link>);
 
     return (
         <div className="bio-div full-height" id="bio-div">
