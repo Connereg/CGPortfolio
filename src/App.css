@@ -35,12 +35,14 @@
 }
 
 #connerpic {
-  
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #conner-bio-card {
   margin: auto;
   width: 75%;
+  border-color: #282c34;
 }
 
 #conner-interests-card {

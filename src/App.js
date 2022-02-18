@@ -3,7 +3,7 @@ import { useState } from 'react';
 import Body from './components/Body/Body';
 import NavBar from './components/NavBar/NavBar';
 import LandingPage from './components/LandingPage/LandingPage';
-import { Outlet } from "react-router-dom";
+
 
 
 
