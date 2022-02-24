@@ -14,6 +14,10 @@
   font-size: calc(10px + 2vmin);
 }
 
+.control-dots {
+  visibility: hidden;
+}
+
 
 #landing-page-div {
   background: linear-gradient(#616161, lightblue);
