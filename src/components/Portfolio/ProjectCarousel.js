@@ -14,6 +14,7 @@ function ProjectCarousel() {
     return (
         <>
         <h2 className="section-header">Additional Projects</h2>
+        <h3 className="subsection-header">Click on a project image to learn more</h3>
         <div class="carousel-control-menu">
             <Button primary id="mtg-lockbox-btn" onClick={focusInCarousel(0)} class="carousel-control-button">MTG Lockbox App</Button>
             <Button primary id="my-interests-btn" onClick={focusInCarousel(1)} class="carousel-control-button">Star Love App</Button>

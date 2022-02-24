@@ -43,11 +43,13 @@ const skillsDiv = () => (
     </div>
 )
 
-function BioCarousel() {
 
-    const [selectedItemIndex, setSelectedItemIndex] = useState(0);
+function BioCarousel(props) {
+    const { selectedItemIndex, focusInCarousel } = props;
+    
+    const [ aboutMeFocus, setAboutMeFocus ] = useState("")
 
-    const focusInCarousel = (index) => () => setSelectedItemIndex(index);
+    
 
     return (
         <>

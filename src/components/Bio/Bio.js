@@ -1,17 +1,20 @@
-import React from 'react';
-import { Image } from 'semantic-ui-react';
-import connerpic from '../assets/connerpic.jpeg';
+import React, { useState } from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import BioCarousel from './BioCarousel';
+import BioPicCarousel from './BioPicCarousel';
 // import { useTransition, useSpring, useChain, config, animated, useSpringRef } from '@react-spring/web';
 
 
 function Bio() {
+    
+    const [selectedItemIndex, setSelectedItemIndex] = useState(0);
+
+    const focusInCarousel = (index) => () => setSelectedItemIndex(index);
 
     return (
         <div className="bio-div full-height" id="bio-div">
-            <Image id="connerpic" circular centered size="medium" src={connerpic} alt="conner_pic" />
-            <BioCarousel />
+            <BioPicCarousel selectedItemIndex={selectedItemIndex} />
+            <BioCarousel selectedItemIndex={selectedItemIndex} focusInCarousel={focusInCarousel} />
         </div>
     )
 }

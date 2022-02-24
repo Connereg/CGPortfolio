@@ -21,7 +21,7 @@ function Mtglockboxmodal() {
                 </Card>}
     >
       <Modal.Header>MTG Lockbox App</Modal.Header>
-        <Carousel autoPlay={true}>
+        <Carousel autoPlay={true} infiniteLoop stopOnHover>
             <div>
                 <Image src={MTGLockboxhome} />
                 <p className="legend">MTG Lockbox Landing Page</p>
