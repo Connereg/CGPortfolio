@@ -12,18 +12,38 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #616161;
 }
 
 
 #landing-page-div {
-  background-color: #616161;
+  background: linear-gradient(#616161, lightblue);
 }
 
 #bio-div {
   width: 100%;
-  background-color: lightblue;
+  background: linear-gradient(lightblue, #e7e6e6);
   padding-bottom: 50px;
+}
+
+.landing-header {
+  padding: auto;
+  font-family: Ububold;
+  font-size: 64px;
+}
+
+.landing-secondary {
+  font-family: Ubu;
+  font-size: medium;
+}
+
+.section-header {
+  font-family: Ububold;
+  color: #444649;
+  
+}
+.subsection-header {
+  font-family: Ubulight;
+  color: #444649
 }
 
 .navbar-spacing {
@@ -61,8 +81,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 2rem;
-  font-style: normal;
-  font-weight: 700;
+  padding-top: 10rem;
   /* or 126% */
   text-align: center;
   margin: auto;

@@ -15,5 +15,4 @@ function Bio() {
         </div>
     )
 }
-
 export default Bio;

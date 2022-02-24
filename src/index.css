@@ -1,3 +1,21 @@
+@font-face {
+  src: url(./components/assets/Ubuntu-Regular.ttf);
+  font-family: Ubu;
+}
+@font-face {
+  font-family: Ububold;
+  src: url(./components/assets/Ubuntu-Bold.ttf);
+}
+@font-face {
+  font-family: Ubulight;
+  src: url(./components/assets/Ubuntu-Light.ttf);
+}
+@font-face {
+  font-family: Ubulightitalic;
+  src: url(./components/assets/Ubuntu-LightItalic.ttf);
+}
+
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
