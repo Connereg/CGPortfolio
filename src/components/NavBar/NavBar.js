@@ -34,6 +34,7 @@ function NavBar(props) {
                     durations={500}
                 >
                     <Menu.Item
+                        className="navbar-item"
                         name='home'
                         content='Home'
                         onClick={(e) => setAppFocus("home")}>
@@ -47,7 +48,8 @@ function NavBar(props) {
                     offset={-70}
                     durations={500}
                 >
-                    <Menu.Item 
+                    <Menu.Item
+                        className="navbar-item" 
                         name='bio'
                         content='Bio'
                         onClick={(e) => setAppFocus("bio")}>
@@ -61,7 +63,8 @@ function NavBar(props) {
                     offset={-70}
                     durations={500}
                 >
-                    <Menu.Item 
+                    <Menu.Item
+                        className="navbar-item" 
                         name='portfolio'
                         content='Portfolio'
                         onClick={(e) => setAppFocus("portfolio")}>
@@ -76,6 +79,7 @@ function NavBar(props) {
                     durations={500}
                 >
                     <Menu.Item
+                        className="navbar-item"
                         name='blog'
                         content='Blog'
                         onClick={(e) => setAppFocus("blog")}>
@@ -90,6 +94,7 @@ function NavBar(props) {
                     durations={500}
                 >
                     <Menu.Item
+                        className="navbar-item"
                         name='contactme'
                         content='Contact Me'
                         onClick={(e) => setAppFocus("contactme")}>

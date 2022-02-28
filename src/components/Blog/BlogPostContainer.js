@@ -1,5 +1,5 @@
 import React from 'react'
-import { Image, Item } from 'semantic-ui-react'
+import { Image, Item, Button } from 'semantic-ui-react'
 
 // import blogpic1 from '../assets/blog1.jpeg'
 // import blogpic2 from '../assets/blog2.jpeg'
@@ -11,17 +11,17 @@ function BlogPostContainer(props) {
 
 
     return (
-        <Item>
+        <Item className="blog-post-item">
             <Item.Image size='medium' src={thumbnail} />
-
             <Item.Content>
                 <Item.Header>{title}</Item.Header>
                 <Item.Meta>
                     <span className="author">By: {author}</span>
                     <span className='pubDate'> Published: {pubDate}</span>
-                    <a className='link' href={link}>Link to Article</a>
                 </Item.Meta>
-                <Item.Description>{content}</Item.Description>
+                <a href={link}>
+                    <Button primary>Link To Article</Button>
+                </a>
             </Item.Content>
         </Item>
 

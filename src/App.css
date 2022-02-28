@@ -32,7 +32,7 @@
 .landing-header {
   padding: auto;
   font-family: Ububold;
-  font-size: 64px;
+  font-size: 90px;
 }
 
 .landing-secondary {
@@ -43,6 +43,7 @@
 .section-header {
   font-family: Ububold;
   color: #444649;
+  text-decoration: underline;
   
 }
 .subsection-header {

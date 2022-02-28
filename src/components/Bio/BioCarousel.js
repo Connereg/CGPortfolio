@@ -46,19 +46,15 @@ const skillsDiv = () => (
 
 function BioCarousel(props) {
     const { selectedItemIndex, focusInCarousel } = props;
-    
-    const [ aboutMeFocus, setAboutMeFocus ] = useState("")
-
-    
 
     return (
         <>
         <div class="carousel-control-menu">
-            <Button id="about-me-btn" onClick={focusInCarousel(0)} class="carousel-control-button">About Me</Button>
-            <Button id="my-interests-btn" onClick={focusInCarousel(1)} class="carousel-control-button">My Interests</Button>
-            <Button id="my-skills-btn" onClick={focusInCarousel(2)} class="carousel-control-button">My Skills</Button>
+            <span id="about-me-btn" onClick={focusInCarousel(0)} class="carousel-control-button">About Me</span>
+            <span id="my-interests-btn" onClick={focusInCarousel(1)} class="carousel-control-button">My Interests</span>
+            <span id="my-skills-btn" onClick={focusInCarousel(2)} class="carousel-control-button">My Skills</span>
         </div>
-        <Carousel selectedItem={selectedItemIndex} >
+        <Carousel selectedItem={selectedItemIndex} className="bio-carousel-component">
             <div>
                 <Card id="conner-bio-card">
                     <Card.Content header='About Conner' />

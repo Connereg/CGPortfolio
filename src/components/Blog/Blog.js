@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Item } from 'semantic-ui-react';
 import BlogPostContainer from './BlogPostContainer';
 
+import './Blog.scss';
+
 function Blog() {
 
     const [blogPosts, setBlogPosts] = useState([])
@@ -36,8 +38,9 @@ function Blog() {
 
     return (
         <div id="blog-div">
-            <h1 className="section-header"> Blog Section </h1>
-            <div>
+            <h1 className="section-header"> Recent Blog Posts </h1>
+            <h4 className="subsection-header">A collection of links to recent technical blog articles made by me on Medium.com</h4>
+            <div className="blog-collec-div">
                 <Item.Group>
                     {blogPostCollection}
                 </Item.Group>   

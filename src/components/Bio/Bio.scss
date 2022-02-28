@@ -1,5 +1,49 @@
 
-
 .carousel-control-menu {
-    padding-bottom: 2rem;
+    padding-bottom: 20px;
 }
+
+#bio-pic-carousel {
+    padding-top:5rem;
+}
+
+#about-me-btn {
+    font-family: Ubu;
+    font-size: x-large;
+    padding-right: 25px;
+    text-decoration: underline;
+    transition: font-size 1s;
+    padding-bottom: 5rem;
+    color: #444649;
+}
+#my-interests-btn {
+    font-family: Ubu;
+    font-size: x-large;
+    padding-right: 25px;
+    text-decoration: underline;
+    transition: font-size 1s;
+    padding-bottom: 5rem;
+    color: #444649;
+}
+#my-skills-btn {
+    font-family: Ubu;
+    font-size: x-large;
+    text-decoration: underline;
+    transition: font-size 1s;
+    padding-bottom: 5rem;
+    color: #444649;
+}
+
+#about-me-btn:hover {
+    font-size: xx-large;
+    color: black;
+}
+#my-interests-btn:hover {
+    font-size: xx-large;
+    color: black;
+}
+#my-skills-btn:hover {
+    font-size: xx-large;
+    color: black;
+}
+

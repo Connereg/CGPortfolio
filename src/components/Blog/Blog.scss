@@ -1,0 +1,15 @@
+#blog-div {
+    width: 80%;
+    padding: 15px;
+    padding-bottom: 20rem;
+    margin: auto;
+    
+    .blog-collec-div {
+        border-style: solid;
+        padding: 15px;
+
+        .blog-post-item {
+            padding-bottom: 20px;
+        }
+    }
+}
