@@ -6,6 +6,8 @@ import connerpic from '../assets/connerpic.jpeg';
 import connerpic2 from '../assets/connerpic2.jpeg';
 import connerpic3 from '../assets/connerpic3.jpeg';
 
+import './Bio.scss';
+
 
 
 function BioPicCarousel(props) {
@@ -18,10 +20,10 @@ function BioPicCarousel(props) {
                     <Image id="connerpic" circular centered size="medium" src={connerpic} alt="conner_pic" />
                 </div>
                 <div>
-                    <Image id="connerpic2" circular centered size="big" src={connerpic2} alt="conner_pic2" />
+                    <Image id="connerpic2" circular centered bordered size="big" src={connerpic2} alt="conner_pic2" />
                 </div>
                 <div>
-                    <Image id="connerpic3" circular centered size="big" src={connerpic3} alt="conner_pic3" />
+                    <Image id="connerpic3" circular centered bordered size="big" src={connerpic3} alt="conner_pic3" />
                 </div>
             </Carousel>
         </div>

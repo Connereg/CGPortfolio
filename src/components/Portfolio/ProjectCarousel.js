@@ -15,9 +15,9 @@ function ProjectCarousel() {
         <>
         <h2 className="section-header">Additional Projects</h2>
         <div class="carousel-control-menu">
-            <Button primary id="mtg-lockbox-btn" onClick={focusInCarousel(0)} class="carousel-control-button">MTG Lockbox App</Button>
-            <Button primary id="star-love-btn" onClick={focusInCarousel(1)} class="carousel-control-button">Star Love App</Button>
-            <Button primary id="coming-soon-btn" onClick={focusInCarousel(2)} class="carousel-control-button">Coming soon</Button>
+            <span id="mtg-lockbox-btn" onClick={focusInCarousel(0)} class="carousel-control-button">MTG Lockbox App</span>
+            <span id="star-love-btn" onClick={focusInCarousel(1)} class="carousel-control-button">Star Love App</span>
+            <span id="coming-soon-btn" onClick={focusInCarousel(2)} class="carousel-control-button">Coming soon</span>
         </div>
         <h3 className="subsection-header">Click on a project image to learn more</h3>
         <Carousel selectedItem={selectedItemIndex} >

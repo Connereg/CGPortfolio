@@ -44,6 +44,8 @@
   font-family: Ububold;
   color: #444649;
   text-decoration: underline;
+  margin-top: 3rem;
+  margin-bottom: 1.5rem;
   
 }
 .subsection-header {
@@ -59,10 +61,6 @@
   height: calc(100vh - 42px);
 }
 
-#connerpic {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
 
 #conner-bio-card {
   margin: auto;

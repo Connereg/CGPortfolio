@@ -27,7 +27,7 @@ const MashlyProject = () => {
             <h2 className="subsection-header">Recent Project: Mashly Video Masher App</h2>
                 {slideOrDemo === "slide" ? (
                     <div>
-                        <Button primary onClick={toggleSlideOrDemo}>Demo</Button>
+                        <Button primary onClick={toggleSlideOrDemo}>Video Demo</Button>
                         <a href="https://mashly-app.herokuapp.com/">
                             <Button secondary>Link To App</Button>
                         </a>
@@ -44,25 +44,25 @@ const MashlyProject = () => {
                     <div id="mashly-section" className="project-section">
                         {slideOrDemo === "slide" ? (
                             <Carousel autoPlay={true} infiniteLoop interval="4000">
-                                <div onClick={toggleSlideOrDemo}>
+                                <div>
                                     <Image src={MashlyHomepage} />
                                     <p className="legend">Homepage and Secure Login</p>
                                 </div>
-                                <div onClick={toggleSlideOrDemo}>
+                                <div>
                                     <Image src={mashlyusersearch} />
                                     <p className="legend">User Search Function</p>
                                 </div>
-                                <div onClick={toggleSlideOrDemo}>
+                                <div>
                                     <Image src={mashlyuserprofile} />
                                     <p className="legend">User Profile and Mashup Collection</p>
                                 </div>
-                                <div onClick={toggleSlideOrDemo}>
+                                <div>
                                     <Image src={mashlycomments} />
                                     <p className="legend">Mashup Player with Comment Section and Profile Hyperlinks</p>
                                 </div>
                             </Carousel> ) : 
                                 <div className="video-container">
-                                    <ReactPlayer url="https://youtu.be/NRnfeyvBj9M?t=3" />
+                                    <ReactPlayer className="mashly-demo-player" url="https://youtu.be/NRnfeyvBj9M?t=3" />
                                 </div>
                         }
                     </div>
