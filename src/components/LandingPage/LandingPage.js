@@ -30,7 +30,7 @@ function LandingPage() {
         <div id="landing-page-div" className="landing-page-div full-height navbar-spacing">
             <animated.div className="animated-header" style={nameprops}>
                 <h1 className="landing-header">Conner Gleason</h1>
-                <animated.h2 style={detailprops}> Web Developer and Quality Assurance Engineer</animated.h2>
+                <animated.h2 className="landing-secondary" style={detailprops}> Web Developer and Quality Assurance Engineer</animated.h2>
             </animated.div> 
         </div>
     )

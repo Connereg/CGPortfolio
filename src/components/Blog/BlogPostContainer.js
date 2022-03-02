@@ -1,5 +1,7 @@
 import React from 'react'
-import { Image, Item, Button } from 'semantic-ui-react'
+import { Image, Item } from 'semantic-ui-react'
+
+import './Blog.scss'
 
 // import blogpic1 from '../assets/blog1.jpeg'
 // import blogpic2 from '../assets/blog2.jpeg'
@@ -20,7 +22,7 @@ function BlogPostContainer(props) {
                     <span className='pubDate'> Published: {pubDate}</span>
                 </Item.Meta>
                 <a href={link}>
-                    <Button primary>Link To Article</Button>
+                    <p className="link-to-article-btn" >Link To Article</p>
                 </a>
             </Item.Content>
         </Item>

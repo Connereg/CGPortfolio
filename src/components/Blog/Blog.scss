@@ -13,3 +13,16 @@
         }
     }
 }
+
+.link-to-article-btn {
+    padding: 30px;
+    font-size: large;
+    transition: font-size 1s;
+    text-decoration: underline;
+    
+}
+
+.link-to-article-btn:hover {
+    font-size: x-large;
+    font-weight: bold;
+}
