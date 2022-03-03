@@ -7,7 +7,7 @@ import App from './App';
 // import Portfolio from './components/Portfolio/Portfolio';
 import reportWebVitals from './reportWebVitals';
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'semantic-ui-css/semantic.min.css';
 
 const rootElement = document.getElementById("root");

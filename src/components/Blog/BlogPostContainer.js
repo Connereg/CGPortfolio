@@ -1,14 +1,11 @@
 import React from 'react'
-import { Image, Item } from 'semantic-ui-react'
+import { Item } from 'semantic-ui-react'
 
 import './Blog.scss'
 
-// import blogpic1 from '../assets/blog1.jpeg'
-// import blogpic2 from '../assets/blog2.jpeg'
-// import blogpic3 from '../assets/blog3.jpeg'
 
 function BlogPostContainer(props) {
-    const { id, author, title, pubDate, link, guid, thumbnail, content } = props;
+    const { author, title, pubDate, link, thumbnail } = props;
 
 
 
