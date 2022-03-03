@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Bio from './components/Bio/Bio';
-import Contact from './components/Contact/Contact';
-import Portfolio from './components/Portfolio/Portfolio';
+// import Bio from './components/Bio/Bio';
+// import Contact from './components/Contact/Contact';
+// import Portfolio from './components/Portfolio/Portfolio';
 import reportWebVitals from './reportWebVitals';
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
@@ -12,15 +12,16 @@ import 'semantic-ui-css/semantic.min.css';
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
-  <BrowserRouter>
-    <Routes>
-      <Route path="/" element={<App />} >
-        <Route path="bio" element={<Bio />} />
-        <Route path="portfolio" element={<Portfolio />} />
-        <Route path="contactme" element={<Contact />} />
-      </Route>
-    </Routes>
-  </BrowserRouter>,
+  <App />,
+  // <BrowserRouter>
+  //   <Routes>
+  //     <Route path="/" element={<App />} >
+  //       {/* <Route path="bio" element={<Bio />} />
+  //       <Route path="portfolio" element={<Portfolio />} />
+  //       <Route path="contactme" element={<Contact />} /> */}
+  //     </Route>
+  //   </Routes>
+  // </BrowserRouter>,
   rootElement
 );
 
