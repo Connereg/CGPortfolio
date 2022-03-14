@@ -13,15 +13,6 @@ import 'semantic-ui-css/semantic.min.css';
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <App />,
-  // <BrowserRouter>
-  //   <Routes>
-  //     <Route path="/" element={<App />} >
-  //       {/* <Route path="bio" element={<Bio />} />
-  //       <Route path="portfolio" element={<Portfolio />} />
-  //       <Route path="contactme" element={<Contact />} /> */}
-  //     </Route>
-  //   </Routes>
-  // </BrowserRouter>,
   rootElement
 );
 
