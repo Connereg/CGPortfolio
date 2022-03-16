@@ -37,15 +37,17 @@ function Blog() {
     })
 
     return (
-        <div id="blog-div">
-            <h1 className="section-header"> Recent Blog Posts </h1>
-            <h4 className="subsection-header">A collection of links to recent technical blog articles made by me on Medium.com</h4>
-            <div className="blog-collec-div">
-                <Item.Group>
-                    {blogPostCollection}
-                </Item.Group>   
-            </div>           
-        </div>
+        <section id="blog-section">
+            <div id="blog-div">
+                <h1 className="section-header"> Recent Blog Posts </h1>
+                <h4 className="subsection-header">A collection of links to recent technical blog articles made by me on Medium.com</h4>
+                <div className="blog-collec-div">
+                    <Item.Group>
+                        {blogPostCollection}
+                    </Item.Group>   
+                </div>           
+            </div>
+        </section>
         
     )
 }
