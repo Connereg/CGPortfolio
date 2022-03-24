@@ -1,0 +1,43 @@
+.navbar-div {
+    .flex {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+ 
+    .navbar {
+        border-bottom: 3px solid teal;
+        background: #1b242f;
+        text-align: center;
+        height: 50px;
+    }
+
+    .active {
+        color: orange;
+    }
+
+    .link-wrap {
+        
+        font-size: initial;
+        
+        cursor: pointer;
+        text-transform: uppercase;
+        transition: color 0.5s;
+
+        .page-link {
+            color: white;
+            display: inline;
+            margin: 0 35px;
+            font-family: Ubulight;
+            padding: initial;
+            transition: color 0.5s;
+        }
+
+        .page-link:hover {
+            color: orange;
+        }
+
+    }
+
+}

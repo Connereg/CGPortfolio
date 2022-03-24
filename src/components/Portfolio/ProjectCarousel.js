@@ -28,7 +28,7 @@ function ProjectCarousel() {
             </div>
             <div className="ongoing-section">
                 <h2 className="section-header">Necessite.com</h2>
-                <h3>Ongoing project for the Necessite Web Developer company based in France</h3>
+                <h3>Ongoing project for the Necessite Web Developement company based in France</h3>
                 <h3>More Details Soon!</h3>
                 
             </div>

@@ -2,6 +2,8 @@ import React from 'react';
 import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-scroll';
 
+import './NavBar.scss';
+
 
 function NavBar(props) {
 
@@ -24,7 +26,66 @@ function NavBar(props) {
 
     return (
         <div id="navbar-div"className="navbar-div">
-            <Menu className="navbar-menu">
+            <nav className="flex navbar">
+                <div className="link-wrap">
+                    <Link
+                        activeClass="active"
+                        to="landing-page-div"
+                        spy={true}
+                        smooth={true}
+                        offset={-70}
+                        durations={500}
+                    >
+                        <div className="page-link active"> Home </div>
+                    </Link>
+
+                    <Link
+                    activeClass="active"
+                    to="bio-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                    >
+                        <div className="page-link active"> Bio </div>
+                    </Link>
+
+                    <Link
+                    activeClass="active"
+                    to="portfolio-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                    >
+                        <div className="page-link"> Portfolio </div>
+                    </Link>
+
+                    <Link
+                    activeClass="active"
+                    to="blog-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                    >
+                        <div className="page-link"> Blog </div>
+                    </Link>
+
+                    <Link
+                    activeClass="active"
+                    to="contact-me-div"
+                    spy={true}
+                    smooth={true}
+                    offset={-70}
+                    durations={500}
+                    >
+                        <div className="page-link"> Contact </div>
+                    </Link>
+
+                </div>
+            </nav>
+            {/* <Menu className="navbar-menu">
                 <Link
                     activeClass="active"
                     to="landing-page-div"
@@ -100,7 +161,7 @@ function NavBar(props) {
                         onClick={(e) => setAppFocus("contactme")}>
                     </Menu.Item>
                 </Link>
-            </Menu>
+            </Menu> */}
         </div>
     )
 }
