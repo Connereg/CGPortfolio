@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import { Image } from 'semantic-ui-react';
+
 
 import connerpic from '../assets/connerpic.jpeg';
 import connerpic2 from '../assets/connerpic2.jpeg';

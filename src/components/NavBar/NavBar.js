@@ -6,7 +6,6 @@ import './NavBar.scss';
 
 function NavBar(props) {
 
-   const { setAppFocus } = props;
 
    document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('scroll', sticknav);
