@@ -1,5 +1,4 @@
 import React from 'react';
-import { Menu } from 'semantic-ui-react';
 import { Link } from 'react-scroll';
 
 import './NavBar.scss';
@@ -44,7 +43,7 @@ function NavBar(props) {
                     to="bio-div"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-90}
                     durations={500}
                     >
                         <div className="page-link active"> Bio </div>
@@ -55,7 +54,7 @@ function NavBar(props) {
                     to="portfolio-div"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-100}
                     durations={500}
                     >
                         <div className="page-link"> Portfolio </div>
@@ -77,7 +76,7 @@ function NavBar(props) {
                     to="contact-me-div"
                     spy={true}
                     smooth={true}
-                    offset={-70}
+                    offset={-200}
                     durations={500}
                     >
                         <div className="page-link"> Contact </div>
@@ -85,83 +84,6 @@ function NavBar(props) {
 
                 </div>
             </nav>
-            {/* <Menu className="navbar-menu">
-                <Link
-                    activeClass="active"
-                    to="landing-page-div"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    durations={500}
-                >
-                    <Menu.Item
-                        className="navbar-item"
-                        name='home'
-                        content='Home'
-                        onClick={(e) => setAppFocus("home")}>
-                    </Menu.Item>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="bio-div"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    durations={500}
-                >
-                    <Menu.Item
-                        className="navbar-item" 
-                        name='bio'
-                        content='Bio'
-                        onClick={(e) => setAppFocus("bio")}>
-                    </Menu.Item>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="portfolio-div"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    durations={500}
-                >
-                    <Menu.Item
-                        className="navbar-item" 
-                        name='portfolio'
-                        content='Portfolio'
-                        onClick={(e) => setAppFocus("portfolio")}>
-                    </Menu.Item>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="blog-div"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    durations={500}
-                >
-                    <Menu.Item
-                        className="navbar-item"
-                        name='blog'
-                        content='Blog'
-                        onClick={(e) => setAppFocus("blog")}>
-                    </Menu.Item>
-                </Link>
-                <Link
-                    activeClass="active"
-                    to="contact-me-div"
-                    spy={true}
-                    smooth={true}
-                    offset={-70}
-                    durations={500}
-                >
-                    <Menu.Item
-                        className="navbar-item"
-                        name='contactme'
-                        content='Contact Me'
-                        onClick={(e) => setAppFocus("contactme")}>
-                    </Menu.Item>
-                </Link>
-            </Menu> */}
         </div>
     )
 }

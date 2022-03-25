@@ -1,59 +1,69 @@
 
 .carousel-control-menu {
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+
+    .carousel-control-button {
+        font-family: Ubu;
+        font-size: x-large;
+        padding-right: 25px;
+        padding-bottom: 15px;
+        transition: all 0.5s;
+        color: #444649;
+        text-decoration: underline;
+        text-align: center;
+        min-width: 100px;
+
+        &:hover {
+            font-size: xx-large;
+            color: black;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
 }
 
-#bio-pic-carousel {
-    padding-top:5rem;
-}
+#bio-div {
+    width: 100%;
+    background: linear-gradient(lightblue, #e7e6e6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
 
-#about-me-btn {
-    font-family: Ubu;
-    font-size: x-large;
-    padding-right: 25px;
-    text-decoration: underline;
-    transition: font-size 1s;
-    padding-bottom: 5rem;
-    color: #444649;
-}
-#my-interests-btn {
-    font-family: Ubu;
-    font-size: x-large;
-    padding-right: 25px;
-    text-decoration: underline;
-    transition: font-size 1s;
-    padding-bottom: 5rem;
-    color: #444649;
-}
-#my-skills-btn {
-    font-family: Ubu;
-    font-size: x-large;
-    text-decoration: underline;
-    transition: font-size 1s;
-    padding-bottom: 5rem;
-    color: #444649;
-}
+    #bio-pic-carousel {
+        flex: 0 1 50vh;
+        width: 50vw;
+        overflow: hidden;
 
-#about-me-btn:hover {
-    font-size: xx-large;
-    color: black;
-    font-weight: bold;
-}
-#my-interests-btn:hover {
-    font-size: xx-large;
-    color: black;
-    font-weight: bold;
-}
-#my-skills-btn:hover {
-    font-size: xx-large;
-    color: black;
-    font-weight: bold;
-}
+        .bio-carousel-pic {
+            display: flex;
+            max-height: 50vh;
+            overflow: hidden;
 
+            img {
+                flex-shrink: 0;
+                min-width: 100%;
+                height: 100%;
+                border-radius: 25%;
+            }
+        }
+    }
 
-#connerpic {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    border-radius: solid;
-  }
+    #bio-carousel-wrapper {
+        flex: 0 1 auto;
+        max-width: 900px;
+        margin: 0 2rem;
+
+        .bio-carousel-component {
+            margin-top: 1rem;
+            
+            .bio-carousel-card {
+                width: 100%;
+            }
+        }
+    }
+}
 

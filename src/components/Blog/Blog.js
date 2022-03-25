@@ -37,8 +37,7 @@ function Blog() {
     })
 
     return (
-        <section id="blog-section">
-            <div id="blog-div">
+            <div id="blog-div" className="full-height">
                 <h1 className="section-header"> Recent Blog Posts </h1>
                 <h4 className="subsection-header">A collection of links to recent technical blog articles made by me on Medium.com</h4>
                 <div className="blog-collec-div">
@@ -47,7 +46,6 @@ function Blog() {
                     </Item.Group>   
                 </div>           
             </div>
-        </section>
         
     )
 }

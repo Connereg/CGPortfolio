@@ -9,8 +9,9 @@ function Contact() {
 
     return (
         <div id="contact-me-div" className="contact-me full-height">
-            <h1 className="section-header">CONTACT INFORMATION</h1>
             <div className="contact-details">
+                <h1 className="section-header">CONTACT INFORMATION</h1>
+                <br/>
                 <Icon className="email-icon" name="envelope" />
                     <h2 className="email-content"> Connereg@optonline.net</h2>
                 <Icon className="linkedin-icon" name="linkedin" />

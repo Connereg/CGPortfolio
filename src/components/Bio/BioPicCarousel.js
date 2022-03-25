@@ -15,15 +15,21 @@ function BioPicCarousel(props) {
 
     return (
         <div id="bio-pic-carousel">
-            <Carousel selectedItem={selectedItemIndex} transitionTime={500}>
-                <div>
-                    <Image id="connerpic" circular centered size="medium" src={connerpic} alt="conner_pic" />
+            <Carousel
+                showThumbs={false}
+                showArrows={false}
+                autoPlay={false}
+                selectedItem={selectedItemIndex}
+                transitionTime={500}
+            >
+                <div className="bio-carousel-pic">
+                    <img className="cg-bio-pic" src={connerpic3} alt="conner_pic3" />
                 </div>
-                <div>
-                    <Image id="connerpic2" circular centered bordered size="big" src={connerpic2} alt="conner_pic2" />
+                <div className="bio-carousel-pic">
+                    <img className="cg-bio-pic" src={connerpic2} alt="conner_pic2" />
                 </div>
-                <div>
-                    <Image id="connerpic3" circular centered bordered size="big" src={connerpic3} alt="conner_pic3" />
+                <div className="bio-carousel-pic">
+                    <img className="cg-bio-pic" src={connerpic} alt="conner_pic1" />
                 </div>
             </Carousel>
         </div>

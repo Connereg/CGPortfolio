@@ -1,8 +1,11 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
   background-color: #e7e6e6;
 }
 
+.App::-webkit-scrollbar {
+  display: none;
+}
 
 .App-header {
   background-color: #282c34;
@@ -21,12 +24,6 @@
 
 #landing-page-div {
   background: linear-gradient(#616161, lightblue);
-}
-
-#bio-div {
-  width: 100%;
-  background: linear-gradient(lightblue, #e7e6e6);
-  padding-bottom: 50px;
 }
 
 .landing-header {
@@ -55,24 +52,7 @@
 
 
 .full-height {
-  height: calc(100vh - 42px);
-}
-
-
-#conner-bio-card {
-  margin: auto;
-  width: 75%;
-  border-color: #282c34;
-}
-
-#conner-interests-card {
-  margin: auto;
-  width: 75%;
-}
-
-#conner-my-skills-card {
-  margin: auto;
-  width: 75%;
+  height: calc(100vh - 50px);
 }
 
 .animated-header {

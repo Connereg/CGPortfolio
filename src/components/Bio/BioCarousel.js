@@ -48,33 +48,27 @@ function BioCarousel(props) {
     const { selectedItemIndex, focusInCarousel } = props;
 
     return (
-        <>
-        <div class="carousel-control-menu">
-            <span id="about-me-btn" onClick={focusInCarousel(0)} class="carousel-control-button">About Me</span>
-            <span id="my-interests-btn" onClick={focusInCarousel(1)} class="carousel-control-button">My Interests</span>
-            <span id="my-skills-btn" onClick={focusInCarousel(2)} class="carousel-control-button">My Skills</span>
-        </div>
-        <Carousel selectedItem={selectedItemIndex} className="bio-carousel-component">
-            <div>
-                <Card id="conner-bio-card">
+        <div id="bio-carousel-wrapper">
+            <div class="carousel-control-menu">
+                <span id="about-me-btn" onClick={focusInCarousel(0)} class="carousel-control-button">About Me</span>
+                <span id="my-interests-btn" onClick={focusInCarousel(1)} class="carousel-control-button">My Interests</span>
+                <span id="my-skills-btn" onClick={focusInCarousel(2)} class="carousel-control-button">My Skills</span>
+            </div>
+            <Carousel selectedItem={selectedItemIndex} className="bio-carousel-component">
+                <Card centered id="conner-bio-card" className="bio-carousel-card">
                     <Card.Content header='About Conner' />
                     <Card.Content description={aboutMeDiv} />
                 </Card>
-            </div>
-            <div>
-                <Card id="conner-interests-card">
+                <Card centered id="conner-interests-card" className="bio-carousel-card">
                     <Card.Content header='My Interests' />
                     <Card.Content description={myInterestsDiv} />
                 </Card>
-            </div>
-            <div>
-                <Card id="conner-my-skills-card">
+                <Card centered id="conner-my-skills-card" className="bio-carousel-card">
                     <Card.Content header='My Technical Skills' />
                     <Card.Content description={skillsDiv} />
                 </Card>
-            </div>
-        </Carousel>
-        </>
+            </Carousel>
+        </div>
     )
 }
 

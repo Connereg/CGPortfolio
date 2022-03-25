@@ -5,11 +5,14 @@
 
 
 #blog-div {
-    width: 70%;
+    width: 80%;
     padding: 15px;
+    display: flex;
+    flex-direction: column;
     margin: auto;
-    background: #f5f5f5;
+    background: linear-gradient();
     border-radius: 25px;
+    align-items: center;
    
     
     .blog-collec-div {
@@ -24,9 +27,10 @@
 
 .link-to-article-btn {
     padding: 30px;
-    font-size: large;
+    font-size: x-large;
     transition: font-size 1s;
     text-decoration: underline;
+    text-align: center;
     
 }
 
