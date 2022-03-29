@@ -1,0 +1,107 @@
+$breakpoints: (
+  'small':  ( min-width:  480 ),
+  'medium': ( min-width:  768 ),
+  'large':  ( min-width: 1024 )
+) !default;
+
+
+/// Mixin to manage responsive breakpoints
+/// @author Kitty Giraudel
+/// @param {String} $breakpoint - Breakpoint name
+/// @require $breakpoints
+@mixin respond-to($breakpoint) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $breakpoint) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+ 
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+
+.App {
+    /* text-align: center; */
+    background-color: #e7e6e6;
+    min-width: none;
+  }
+  
+  .App::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+  }
+  
+  .control-dots {
+    visibility: hidden;
+  }
+  
+  
+  #landing-page-div {
+    background: linear-gradient(#616161, lightblue);
+  }
+  
+  .landing-header {
+    padding: auto;
+    font-family: Ububold;
+    font-size: 5vw;
+  }
+  
+  .landing-secondary {
+    font-family: Ubulight;
+    font-size: 2vw;
+  }
+  
+  .section-header {
+    font-family: Ububold;
+    color: #444649;
+    text-decoration: underline;
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    
+  }
+  .subsection-header {
+    font-family: Ubulight;
+    color: #444649
+  }
+  
+  
+  .full-height {
+    height: calc(100vh - 50px);
+  }
+  
+  .animated-header {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+    padding-top: 13rem;
+    /* or 126% */
+    text-align: center;
+    margin: auto;
+    color: #FFFFFF;
+  }
+  
+  
+  
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+  }

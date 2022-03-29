@@ -1,4 +1,5 @@
 import React from 'react';
+import { Image } from 'semantic-ui-react';
 import { Carousel } from 'react-responsive-carousel';
 
 
@@ -23,13 +24,13 @@ function BioPicCarousel(props) {
                 transitionTime={500}
             >
                 <div className="bio-carousel-pic">
-                    <img className="cg-bio-pic" src={connerpic3} alt="conner_pic3" />
+                    <Image size="large" className="cg-bio-pic" src={connerpic3} alt="conner_pic3" />
                 </div>
                 <div className="bio-carousel-pic">
-                    <img className="cg-bio-pic" src={connerpic2} alt="conner_pic2" />
+                    <Image size="large" className="cg-bio-pic" src={connerpic2} alt="conner_pic2" />
                 </div>
-                <div className="bio-carousel-pic">
-                    <img className="cg-bio-pic" src={connerpic} alt="conner_pic1" />
+                <div className="bio-carousel-pic-3">
+                    <Image size="medium" centered circular className="cg-bio-pic" src={connerpic} alt="conner_pic1" />
                 </div>
             </Carousel>
         </div>

@@ -10,10 +10,10 @@
 #portfolio-div {
     background:  #e7e6e6;
     align-items: center;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
     justify-content: space-around;
-    // height: calc(160vh - 50px);
+    height: calc(160vh - 50px);
 
     .mashly-project-wrapper {
         .subsection-header {
